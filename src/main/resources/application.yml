@@ -1,3 +1,9 @@
+
+
 spring:
   redis:
     host: 192.168.2.130
+  thymeleaf:
+    cache: false  # 热部署静态文件
+server:
+  port: 9001

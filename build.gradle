@@ -27,6 +27,7 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    compile('org.springframework.boot:spring-boot-starter-thymeleaf')
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
@@ -34,6 +35,8 @@ dependencies {
     }
     compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.10'
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-redis', version: '2.2.2.RELEASE'
+    compile('org.springframework.boot:spring-boot-starter-quartz')
+
 
 }
 

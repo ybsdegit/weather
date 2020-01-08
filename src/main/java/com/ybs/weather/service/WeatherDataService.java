@@ -1,6 +1,7 @@
 package com.ybs.weather.service;
 
 import com.ybs.weather.vo.WeatherResponse;
+import org.springframework.stereotype.Service;
 
 /**
  * WeatherDataService
@@ -24,5 +25,11 @@ public interface WeatherDataService {
      * @return
      */
     WeatherResponse getDataByCityName(String cityName);
+
+    /**
+     * 通过城市Id来同步天气
+     * @param cityId
+     */
+    void syncDataByCityId(String cityId);
 
 }
