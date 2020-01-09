@@ -25,7 +25,7 @@ public class WeatherController {
 
     @GetMapping("")
     public String  hello(){
-        return "hello";
+        return "redirect:report/weather/";
     }
 
     @GetMapping("/cityId/{cityId}")

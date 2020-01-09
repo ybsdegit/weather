@@ -23,4 +23,9 @@ public class Hello {
         model.addAttribute("name", name);
         return "greeting";
     }
+
+    @GetMapping("")
+    public String  hello(){
+        return "redirect:/report/weather";
+    }
 }

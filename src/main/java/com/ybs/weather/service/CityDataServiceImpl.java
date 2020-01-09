@@ -3,7 +3,6 @@ package com.ybs.weather.service;
 import com.ybs.weather.util.XmlBuilder;
 import com.ybs.weather.vo.City;
 import com.ybs.weather.vo.CityList;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Service;

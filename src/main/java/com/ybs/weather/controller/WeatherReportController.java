@@ -6,10 +6,7 @@ import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
@@ -29,9 +26,9 @@ public class WeatherReportController {
     private WeatherReportService weatherReportService;
 
     @SneakyThrows
-    @GetMapping("/cityId/{cityId}")
-    public String getReportByCityId(@PathVariable String cityId, Model model) {
-        model.addAttribute("title", "飞翔的天气预报");
+    @GetMapping("/weather")
+    public String getReportByCityId2(@RequestParam(name = "cityId", defaultValue = "101010100", required = false) String cityId, Model model) {
+        model.addAttribute("title", "Paulson 的天气预报");
         model.addAttribute("cityId", cityId);
         model.addAttribute("cityList", cityDataService.listCity());
         model.addAttribute("report", weatherReportService.getDataByCityId(cityId));

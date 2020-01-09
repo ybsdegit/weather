@@ -2,7 +2,7 @@
 
 spring:
   redis:
-    host: 192.168.2.130
+    host: 112.126.101.188
   thymeleaf:
     cache: false  # 热部署静态文件
 server:

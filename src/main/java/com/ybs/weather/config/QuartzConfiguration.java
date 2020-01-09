@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class QuartzConfiguration {
 
-    private static final int TIME = 1800;
+    private static final int TIME = 3600;
 
     // JobDetail 特定job
     @Bean
